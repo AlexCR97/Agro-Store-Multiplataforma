@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+
+    <!-- back button -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <!-- title -->
+    <ion-title>Mis datos</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list>
+
+    <!-- nombre -->
+    <ion-item lines="none">
+      <ion-text>
+        <ion-label>Nombre actual</ion-label>
+        <sub>Nombre(s)</sub>
+      </ion-text>
+    </ion-item>
+
+    <!-- apellido -->
+    <ion-item lines="none">
+      <ion-text>
+        <ion-label>Apellido actual</ion-label>
+        <sub>Apellido(s)</sub>
+      </ion-text>
+    </ion-item>
+
+    <!-- telefono -->
+    <ion-item lines="none">
+      <ion-text>
+        <ion-label>Telefono actual</ion-label>
+        <sub>Telefono</sub>
+      </ion-text>
+    </ion-item>
+
+    <br>
+
+    <!-- editar -->
+    <ion-button class="ion-text-capitalize" expand="block" shape="round" routerLink="/actualizar-mis-datos">Editar</ion-button>
+
+  </ion-list>
+
+</ion-content>

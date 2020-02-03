@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar></ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- notificaciones -->
+  <ion-list class="notificaciones">
+
+    <!-- notificacion item -->
+    <ion-item class="notificacion-item" lines="full" *ngFor="let i of notificaciones">
+
+      <!-- img -->
+      <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+
+      <!-- message -->
+      <ion-text>
+        Este es el detalle de la notificacion. Lorem ipsum dolor sit amet consectetur.
+
+        <ion-label class="tiempo">
+          Hace 13 horas
+        </ion-label>
+      </ion-text>
+      
+      <!-- more -->
+      <ion-icon name="more" slot="end"></ion-icon>
+
+    </ion-item><!-- notificacion item -->
+
+  </ion-list><!-- notificaciones -->
+
+</ion-content>
+

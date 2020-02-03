@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+
+    <!-- back button -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <!-- title -->
+    <ion-title>Compra</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- datos de compra -->
+  <h4>Datos de compra</h4>
+
+  <ion-list class="datos-compra">
+
+    <!-- numero de compra-->
+    <ion-item>
+      <ion-text>
+        <h6>Numero de compra</h6>
+        <ion-label>#00004175</ion-label>
+      </ion-text>
+    </ion-item><!-- numero de compra-->
+
+    <!-- nombre de quien recibe -->
+    <ion-item>
+      <ion-text>
+        <h6>Nombre de quien recibe</h6>
+        <ion-label>Nombre de la persona que recibe</ion-label>
+      </ion-text>
+    </ion-item><!-- nombre de quien recibe -->
+    
+  </ion-list><!-- datos de compra -->
+
+  <!-- ticket de compra -->
+  <h4>Ticket de compra</h4>
+
+  <!-- ticket -->
+  <ion-list class="ticket">
+
+    <!-- ticket item -->
+    <ion-item class="ticket-item" *ngFor="let i of products">
+
+        <!-- detais -->
+        <div class="details">
+          <h6>Nombre del producto</h6>
+          <p>$ 19.50</p>
+        </div><!-- detais -->
+
+    </ion-item><!-- ticket item -->
+
+    <!-- ticket item total -->
+    <ion-item class="ticket-item ticket-item-total">
+
+      <!-- detais -->
+      <div class="details">
+        <h6>TOTAL</h6>
+        <p>$ 412.00</p>
+      </div><!-- detais -->
+
+  </ion-item><!-- ticket item total -->
+
+  </ion-list><!-- ticket -->
+
+</ion-content>
+
+<ion-footer class="ion-padding">
+
+  <!-- comprar -->
+  <ion-button class="ion-text-capitalize" expand="block">Confirmar</ion-button>
+
+</ion-footer>

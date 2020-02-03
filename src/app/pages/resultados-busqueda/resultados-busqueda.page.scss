@@ -1,0 +1,54 @@
+ion-toolbar {
+    --background: var(--ion-color-primary);
+}
+
+.busqueda-item {
+    margin-bottom: 15px;
+
+    img {
+        border: 1px solid red;
+        margin-right: 10px;
+        width: 120px;
+    }
+
+    h4, h5 {
+        margin: 0px 0px 10px 0px;
+    }
+
+    h5 {
+        margin: 0px 0px 20px 0px;
+    }
+
+    ion-label {
+        color: gray;
+        margin-bottom: 5px;
+    }
+}
+
+.producto-item {
+    .producto-item-body {
+        display: flex;
+        align-items: flex-start;
+        padding: 10px;
+        
+        img {
+            margin-right: 10px;
+            width: 130px;
+        }
+        
+        .producto-item-detalles {
+            h4 {
+                margin: 0px 0px 10px 0px;
+            }
+            
+            h5 {
+                margin: 0px 0px 20px 0px;
+            }
+
+            p {
+                color: gray;
+                margin: 0px;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+ion-toolbar {
+    --background: var(--ion-color-primary);
+}
+
+.cover {
+    background-color: black;
+
+    img {
+        height: 250px;
+        margin: 0px;
+    }
+}
+
+.img-strip {
+    display: flex;
+    margin: 3px 0px 3px 0px;
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.detalles {
+    //border: 2px solid red;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0px 0px 10px 0px;
+    }
+
+    p {
+        margin: 0px 0px 5px 0px;
+    }
+}
+
+.detalles-producto {
+    p {
+        text-align: right;
+    }
+}
+
+.desc-producto {
+    margin-top: 10px;
+}
+
+.comentarios {
+    //border: 2px solid blue;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .comentario-item {
+        padding: 15px 0px 15px 0px;
+        
+        p {
+            margin: 0px;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            p {
+                font-weight: 600;
+            }
+
+            span {
+                font-weight: normal;
+                color: gray;
+            }
+        }
+    }
+
+}

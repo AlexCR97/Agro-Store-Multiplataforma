@@ -1,5 +1,7 @@
 {
   "name": "agro-store",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

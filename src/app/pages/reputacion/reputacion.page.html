@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar>
+
+    <!-- back button -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <!-- title -->
+    <ion-title>Reputación</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list>
+
+    <!-- seccion 1 reputacion actual -->
+    <ion-item-divider>
+      <h5>Reputacion actual</h5>
+    </ion-item-divider>
+
+    <!-- reputacion actual -->
+    <ion-grid>
+      <ion-row>
+        <ion-col class="item-label"> Mi reputacion actual</ion-col>
+        <ion-col class="item-value" size="3">
+          <div class="rating-item">
+            <ion-icon name="star"></ion-icon>
+            <p>3.5</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- seccion 2 calificaciones -->
+    <ion-item-divider>
+      <h5>Calificaciones</h5>
+    </ion-item-divider>
+
+    <!-- positivas -->
+    <ion-grid>
+      <ion-row>
+        <ion-col class="item-label">Positivas</ion-col>
+        <ion-col class="item-value" size="3">42%</ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- negativas -->
+    <ion-grid>
+      <ion-row>
+        <ion-col class="item-label">Negativas</ion-col>
+        <ion-col class="item-value" size="3">21%</ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- neutras -->
+    <ion-grid>
+      <ion-row>
+        <ion-col class="item-label">Neutras</ion-col>
+        <ion-col class="item-value" size="3">37%</ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- seccion 2 historial de calificaciones -->
+    <ion-item-divider>
+      <h5>Historial</h5>
+    </ion-item-divider>
+
+    <!-- calificaciones -->
+    <ion-grid *ngFor="let i of historialCalificaciones">
+      <ion-row>
+        <ion-col class="item-label">{{i.fecha}}</ion-col>
+        <ion-col class="item-value" size="3">
+          <div class="rating-item">
+            <ion-icon name="star"></ion-icon>
+            <p>{{i.calificacion}}</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-list>
+
+</ion-content>

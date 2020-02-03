@@ -1,0 +1,12 @@
+ion-toolbar {
+    --background: var(--ion-color-primary);
+}
+
+ion-item {
+    margin-bottom: 10px;
+
+    sub {
+        color: gray;
+    }
+}
+

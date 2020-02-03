@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+
+    <!-- back button -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <!-- title -->
+    <ion-title>Actualizar contraseña</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+  <ion-list>
+
+    <!-- contraseña actual -->
+    <ion-item>
+      <ion-label position="floating">Contraseña actual</ion-label>
+      <ion-input type="text" value="Contraseña actual" disabled></ion-input>
+    </ion-item>
+
+    <!-- contraseña nuevo -->
+    <ion-item>
+      <ion-label position="floating">Contraseña nueva</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <br>
+
+    <!-- confirmar -->
+    <ion-button class="ion-text-capitalize" expand="block" shape="round" (click)="actualizarContrasena()">Confirmar</ion-button>
+
+  </ion-list>
+
+</ion-content>

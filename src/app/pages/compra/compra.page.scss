@@ -1,0 +1,24 @@
+ion-toolbar {
+    --background: var(--ion-color-primary);
+}
+
+.datos-compra {
+    ion-label {
+        color: gray;
+        margin-bottom: 5px;
+    }
+}
+
+.ticket {
+    .ticket-item {
+        .details {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    .ticket-item-total {
+        --background: lightgray;
+    }
+}

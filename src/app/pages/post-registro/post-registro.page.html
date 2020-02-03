@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="light">{{currentSegment}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- segment containers -->
+  <div [ngSwitch]="segmentId">
+
+    <!-- segment 1 -->
+    <div *ngSwitchCase="'segment1'">
+
+      <!-- nombre de usuario -->
+      <ion-item>
+        <ion-label position="floating">Nombre de usuario</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+    </div><!-- segment 1 -->
+
+    <!-- segment 2 -->
+    <div *ngSwitchCase="'segment2'">
+
+      <!-- nombres -->
+      <ion-item>
+        <ion-label position="floating">Nombre(s)</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <!-- apellido(s) -->
+      <ion-item>
+        <ion-label position="floating">Apellido(s)</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <!-- telefono -->
+      <ion-item>
+        <ion-label position="floating">Teléfono</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+
+    </div><!-- segment 2 -->
+
+    <!-- segment 3 -->
+    <div *ngSwitchCase="'segment3'">
+
+      <!-- estado -->
+      <ion-item>
+        <ion-label>Estado</ion-label>
+        <ion-select [interfaceOptions]="customPopoverOptions" interface="popover">
+          <ion-select-option>Estado</ion-select-option>
+          <ion-select-option>Estado</ion-select-option>
+          <ion-select-option>Estado</ion-select-option>
+          <ion-select-option>Estado</ion-select-option>
+          <ion-select-option>Estado</ion-select-option>
+          <ion-select-option>Estado</ion-select-option>
+          <ion-select-option>Estado</ion-select-option>
+          <ion-select-option>Estado</ion-select-option>
+          <ion-select-option>Estado</ion-select-option>
+          <ion-select-option>Estado</ion-select-option>
+          <ion-select-option>Estado</ion-select-option>
+          <ion-select-option>Estado</ion-select-option>
+        </ion-select>
+      </ion-item><!-- estado -->
+
+      <br>
+
+      <!-- finalizar registro -->
+      <ion-button class="ion-text-capitalize" expand="block" shape="round" routerLink="/inicio">Finalizar registro</ion-button>
+
+    </div><!-- segment 3 -->
+
+  </div><!-- segment containers -->
+
+</ion-content>
+
+<ion-footer>
+
+  <!-- segments -->
+  <ion-segment [(ngModel)]="segmentId" (ionChange)="segmentChanged($event)">
+    
+    <ion-segment-button value="segment1" class="ion-text-capitalize">
+      1
+    </ion-segment-button>
+
+    <ion-segment-button value="segment2" class="ion-text-capitalize">
+      2
+    </ion-segment-button>
+    
+    <ion-segment-button value="segment3" class="ion-text-capitalize">
+      3
+    </ion-segment-button>
+    
+  </ion-segment><!-- segments -->
+
+</ion-footer>

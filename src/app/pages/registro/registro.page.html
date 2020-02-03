@@ -1,0 +1,40 @@
+<ion-content>
+  <!-- container -->
+  <div class="container fill-y as-px-1">
+    <!-- center y-->
+    <div class="fill-y center-y">
+
+      <!-- logo -->
+      <div class="center-x">
+        <img src="../../../assets/img/logo-green.png" class="logo">
+      </div>
+      
+      <!-- correo -->
+      <ion-item>
+        <ion-icon slot="start" name="mail" class="as-text-primary"></ion-icon>
+        <ion-input type="text" placeholder="Correo electrónico"></ion-input>
+      </ion-item>
+      
+      <!-- contrasena -->
+      <ion-item>
+        <ion-icon slot="start" name="lock" class="as-text-primary"></ion-icon>
+        <ion-input type="password" placeholder="Contraseña"></ion-input>
+      </ion-item>
+
+      <!-- confirmar contrasena -->
+      <ion-item>
+        <ion-icon slot="start" name="lock" class="as-text-primary"></ion-icon>
+        <ion-input type="password" placeholder="Confirmar contraseña"></ion-input>
+      </ion-item>
+      
+      <div class="separator"></div>
+      
+      <!-- registrarse -->
+      <ion-button class="ion-text-capitalize" expand="block" shape="round" routerLink="/post-registro">Registrarse</ion-button>
+      
+      <!-- ya tengo cuenta -->
+      <p class="ya-tengo-cuenta" routerLink="/login">Ya tengo una cuenta</p>
+      
+    </div><!-- center y-->
+  </div><!-- container -->
+</ion-content>

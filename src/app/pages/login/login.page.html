@@ -1,0 +1,34 @@
+<ion-content>
+  <!-- container -->
+  <div class="container fill-y as-px-1">
+    <!-- center y-->
+    <div class="fill-y center-y">
+
+      <!-- logo -->
+      <div class="center-x">
+        <img src="../../../assets/img/logo-green.png" class="logo">
+      </div>
+      
+      <!-- usuario -->
+      <ion-item>
+        <ion-icon slot="start" name="person" class="as-text-primary"></ion-icon>
+        <ion-input type="text" placeholder="Nombre de usuario"></ion-input>
+      </ion-item>
+      
+      <!-- contrasena -->
+      <ion-item>
+        <ion-icon slot="start" name="lock" class="as-text-primary"></ion-icon>
+        <ion-input type="password" placeholder="Contraseña"></ion-input>
+      </ion-item>
+
+      <br>
+      
+      <!-- iniciar sesion -->
+      <ion-button class="ion-text-capitalize" expand="block" shape="round" routerLink="/inicio">Iniciar Sesión</ion-button>
+      
+      <!-- registrarse -->
+      <ion-button class="ion-text-capitalize" expand="block" shape="round" fill="outline" routerLink="/registro">Registrarse</ion-button>
+      
+    </div><!-- center y-->
+  </div><!-- container -->
+</ion-content>

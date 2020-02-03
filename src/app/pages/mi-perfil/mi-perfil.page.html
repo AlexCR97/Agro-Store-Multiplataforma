@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+
+    <!-- back button -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <!-- title -->
+    <ion-title>Mi perfil</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- content header -->
+  <div class="content-header">
+
+    <div class="ion-padding">
+      <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+    </div>
+
+    <div class="box ion-padding">
+      <p>Nombre de usuario</p>
+      <p>carp_97@outlook.com</p>
+      
+      <!-- rating bar -->
+      <div class="rating-bar">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div><!-- rating bar -->
+    </div>
+      
+  </div><!-- content header -->
+
+  <!-- configuracion -->
+  <ion-list class="ion-padding">
+
+    <ion-list-header>
+      Configuración
+    </ion-list-header>
+
+    <!-- mis datos -->
+    <ion-item lines="none" routerLink="/mis-datos">
+      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-label>Mis datos</ion-label>
+    </ion-item>
+
+    <!-- reputacion -->
+    <ion-item lines="none" routerLink="/reputacion">
+      <ion-icon name="star" slot="start"></ion-icon>
+      <ion-label>Reputación</ion-label>
+    </ion-item>
+
+    <!-- configuracion de cuenta -->
+    <ion-item lines="none" routerLink="/configuracion-cuenta">
+      <ion-icon name="settings" slot="start"></ion-icon>
+      <ion-label>Configuración de cuenta</ion-label>
+    </ion-item>
+
+  </ion-list><!-- configuracion -->
+
+</ion-content>

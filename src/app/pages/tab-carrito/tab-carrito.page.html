@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar></ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- carrito list -->
+  <ion-list class="carrito-list">
+
+    <!-- carrito item -->
+    <ion-item *ngFor="let i of products">
+      <div class="carrito-item">
+
+        <!-- img -->
+        <img src="{{i.imgSrc}}" alt="">
+
+        <!-- detalles -->
+        <div class="detalles">
+          <h6>{{i.titulo}}</h6>
+          <p>{{i.precio}}</p>
+          <p><span>23 unidades</span></p>
+        </div><!-- detalles -->
+
+      </div>
+    </ion-item><!-- carrito item -->
+
+  </ion-list><!-- carrito list -->
+
+</ion-content>
+
+<ion-footer class="ion-padding">
+
+  <!-- total -->
+  <div class="total">
+    <h5><span>Total</span></h5>
+    <h5>$ 412.00 MXN</h5>
+  </div><!-- total -->
+
+  <!-- comprar -->
+  <ion-button class="ion-text-capitalize" expand="block" routerLink="/compra">Comprar</ion-button>
+
+</ion-footer>
+

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+
+    <!-- back button -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <!-- title -->
+    <ion-title>Actualizar correo</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+  <ion-list>
+
+    <!-- correo actual -->
+    <ion-item>
+      <ion-label position="floating">Correo actual</ion-label>
+      <ion-input type="text" value="Correo actual" disabled></ion-input>
+    </ion-item>
+
+    <!-- correo nuevo -->
+    <ion-item>
+      <ion-label position="floating">Correo nuevo</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <br>
+
+    <!-- confirmar -->
+    <ion-button class="ion-text-capitalize" expand="block" shape="round" (click)="actualizarCorreo()">Confirmar</ion-button>
+
+  </ion-list>
+
+</ion-content>

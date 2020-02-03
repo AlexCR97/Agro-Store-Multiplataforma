@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+
+    <!-- back button -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <!-- title -->
+    <ion-title>Configuracion de cuenta</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+
+    <!-- seccion 1 mi cuenta-->
+    <ion-item-divider>
+      <h5>Mi cuenta</h5>
+    </ion-item-divider>
+
+    <!-- nombre de usuario -->
+    <ion-item lines="none" routerLink="/actualizar-nombre-usuario">
+      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-text>
+        <ion-label>Nombre de usuario</ion-label>
+        <sub>Alezpecial</sub>
+      </ion-text>
+    </ion-item>
+
+    <!-- correo -->
+    <ion-item lines="none" routerLink="/actualizar-correo">
+      <ion-icon name="mail" slot="start"></ion-icon>
+      <ion-text>
+        <ion-label>Correo eletrónico</ion-label>
+        <sub>carp_97@outlook.com</sub>
+      </ion-text>
+    </ion-item>
+
+    <!-- contrasena -->
+    <ion-item lines="none" routerLink="/actualizar-contrasena">
+      <ion-icon name="lock" slot="start"></ion-icon>
+      <ion-text>
+        <ion-label>Contraseña</ion-label>
+        <sub>Actualiza tu contraseña</sub>
+      </ion-text>
+    </ion-item>
+
+    <!-- seccion 2 tipo de cuenta -->
+    <ion-item-divider>
+      <h5>Tipo de cuenta</h5>
+    </ion-item-divider>
+
+    <!-- registrarme como vendedor -->
+    <ion-item lines="none">
+      <ion-icon name="key" slot="start"></ion-icon>
+      <ion-text>
+        <ion-label>Registrarme como vendedor</ion-label>
+        <sub>Configura tu cuenta para que puedas vender tus productos</sub>
+      </ion-text>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

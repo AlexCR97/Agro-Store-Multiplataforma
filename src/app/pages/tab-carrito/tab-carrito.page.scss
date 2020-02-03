@@ -1,0 +1,37 @@
+.carrito-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px 0px 8px 0px;
+
+    img {
+        margin-right: 10px;
+        width: 90px;
+    }
+
+    .detalles {
+        h6 {
+            margin: 0px 0px 10px 0px;
+        }
+
+        p {
+            margin: 0px;
+        }
+
+        span {
+            color: gray;
+        }
+    }
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+
+    h5 {
+        margin: 0px 0px 8px 0px;
+    }
+
+    span {
+        font-weight: normal;
+    }
+}

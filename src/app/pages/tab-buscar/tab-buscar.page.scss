@@ -1,0 +1,30 @@
+.categoria-item {
+    background-size: cover;
+    margin-bottom: 10px;
+
+    .categoria-item-title {
+        background-color: rgba(40, 40, 40, 0.60);
+        height: 175px;
+
+        h1, h2, h3, h4, h5, h6, p {
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+    }
+}
+
+.categoria-item-hortalizas {
+    background-image: url("../../../assets/img/bg-cat-hortalizas.jpg");
+}
+
+.categoria-item-semillas {
+    background-image: url("../../../assets/img/bg-cat-semillas.jpg");
+}
+
+.categoria-item-lacteos {
+    background-image: url("../../../assets/img/bg-cat-lacteos.jpg");
+}
+
+.categoria-item-carnes {
+    background-image: url("../../../assets/img/bg-cat-carnes.jpg");
+}

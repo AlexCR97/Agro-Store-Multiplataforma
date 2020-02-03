@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+
+    <!-- back button -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <!-- title -->
+    <ion-title>Actualizar mis datos</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- nombre -->
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <!-- apellido -->
+  <ion-item>
+    <ion-label position="floating">Apellido</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <!-- telefono -->
+  <ion-item>
+    <ion-label position="floating">Telefono</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <!-- confirmar -->
+  <ion-button class="ion-text-capitalize" expand="block" shape="round" (click)="actualizarDatos()">Confirmar</ion-button>
+
+</ion-content>

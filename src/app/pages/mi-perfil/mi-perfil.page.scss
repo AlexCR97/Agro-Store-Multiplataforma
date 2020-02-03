@@ -1,0 +1,22 @@
+ion-toolbar {
+    --background: var(--ion-color-primary);
+}
+
+.content-header {
+    background: url("../../../assets/img/bg-mi-perfil.jpg");
+    background-size: cover;
+
+    .box {
+        background-color: rgba(50, 50, 50, 0.75);
+    }
+
+    p {
+        color: white;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .rating-bar {
+        color: var(--ion-color-primary);
+        font-size: 25px;
+    }
+}

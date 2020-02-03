@@ -24,3 +24,76 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.as-bg-primary {
+    background: var(--ion-color-primary);
+}
+
+.as-card {
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 0px rgb(158, 158, 158);
+    margin: 4px;
+}
+
+.as-px-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.as-py-1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.as-text-primary {
+    color: var(--ion-color-primary);
+}
+
+.border-blue {
+    border: 2px solid blue;
+}
+
+.border-green {
+    border: 2px solid green;
+}
+
+.border-red {
+    border: 2px solid red;
+}
+
+.center-both {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-x {
+    display: flex;
+    justify-content: center;
+}
+
+.center-y {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fill-x {
+    width: 100%;
+}
+
+.fill-y {
+    height: 100%;
+}
+
+.separator {
+    background-color: lightgray;
+    height: 1.5px;
+    margin: 0px 10px 0px 10px;
+}
+
+.separator-full {
+    background-color: lightgray;
+    height: 1.5px;
+    margin: 0px;
+}

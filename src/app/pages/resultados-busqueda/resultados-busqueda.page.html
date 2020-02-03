@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="funnel"></ion-icon>
+      </ion-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-searchbar id="searchBarResultados" placeholder="Buscar" (search)="onSearch($event)"></ion-searchbar>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <!-- producto item -->
+    <div class="producto-item" *ngFor="let i of productos" routerLink="/publicacion">
+      <!-- body -->
+      <div class="producto-item-body">
+        <img src="{{i.imgSrc}}" alt="">
+
+        <!-- detalles -->
+        <div class="producto-item-detalles">
+          <h4>{{i.titulo}}</h4>
+          <h5>{{i.precio}}</h5>
+          <p>{{i.cantidadVendidas}} vendidos(as)</p>
+          <p>{{i.estado}}</p>
+        </div><!-- detalles -->
+      </div><!-- body -->
+
+      <!-- separator-->
+      <div class="separator"></div>
+    </div><!-- producto item -->
+
+</ion-content>
