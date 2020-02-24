@@ -39,25 +39,25 @@
       </ion-item>
 
       <!-- mis compras -->
-      <ion-item>
+      <ion-item routerLink="/mis-compras">
         <ion-icon name="basket" slot="start"></ion-icon>
         <ion-label>Mis compras</ion-label>
       </ion-item>
 
       <!-- mis ventas -->
-      <ion-item>
+      <ion-item routerLink="/mis-ventas">
         <ion-icon name="analytics" slot="start"></ion-icon>
         <ion-label>Mis ventas</ion-label>
       </ion-item>
 
       <!-- vender -->
-      <ion-item>
+      <ion-item routerLink="/vender">
         <ion-icon name="cash" slot="start"></ion-icon>
         <ion-label>Vender</ion-label>
       </ion-item>
 
       <!-- cerrar sesion -->
-      <ion-item>
+      <ion-item (click)="cerrarSesion()">
         <ion-icon name="exit" slot="start"></ion-icon>
         <ion-label>Cerrar sesión</ion-label>
       </ion-item>

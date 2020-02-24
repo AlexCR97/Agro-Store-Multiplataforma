@@ -49,6 +49,10 @@
     color: var(--ion-color-primary);
 }
 
+.as-text-primary-shade {
+    color: var(--ion-color-primary-shade);
+}
+
 .border-blue {
     border: 2px solid blue;
 }
@@ -96,4 +100,23 @@
     background-color: lightgray;
     height: 1.5px;
     margin: 0px;
+}
+
+.img-cover {
+    background-color: black;
+
+    img {
+        height: 250px;
+        margin: 0px;
+    }
+}
+
+.img-strip {
+    display: flex;
+    margin: 3px 0px 3px 0px;
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
 }

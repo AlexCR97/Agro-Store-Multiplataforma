@@ -1,0 +1,18 @@
+ion-toolbar {
+    --background: var(--ion-color-primary);
+}
+
+.precio {
+    --ion-grid-padding: 0px;
+}
+
+.resumen-list {
+    ion-item {
+        padding: 5px 0px;
+
+        ion-text {
+            margin-bottom: 5px;
+        }
+    }
+}
+

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GeneralService } from 'src/app/services/general-service';
+import { ModalController } from '@ionic/angular';
+import { ModalBuscarPage } from 'src/app/modals/modal-buscar/modal-buscar.page';
 
 @Component({
   selector: 'app-resultados-busqueda',
@@ -10,13 +12,23 @@ export class ResultadosBusquedaPage implements OnInit {
 
   private productos = GeneralService.products;
 
-  constructor() { }
+  constructor(
+    private modalController: ModalController,
+  ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    var searchBar = document.getElementById('searchBarResultados');
+    searchBar.addEventListener('ionFocus', (event) => this.onFocus(event));
+  }
 
-  onSearch(event: any) {
-    console.log('on search');
-    console.log(event.target.value);
+  async onFocus(event: any) {
+    console.log('focus');
+
+    const modal = await this.modalController.create({
+      component: ModalBuscarPage,
+    });
+
+    await modal.present();
   }
 
 }

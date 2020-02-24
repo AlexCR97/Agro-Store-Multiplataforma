@@ -1,0 +1,16 @@
+ion-toolbar {
+    --background: var(--ion-color-primary);
+}
+
+.compra-item {
+    padding: 4px;
+
+    ion-label {
+        margin-bottom: 4px;
+    }
+
+    .fecha {
+        color: gray;
+        margin-bottom: 8px;
+    }
+}

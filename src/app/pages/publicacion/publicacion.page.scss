@@ -2,25 +2,6 @@ ion-toolbar {
     --background: var(--ion-color-primary);
 }
 
-.cover {
-    background-color: black;
-
-    img {
-        height: 250px;
-        margin: 0px;
-    }
-}
-
-.img-strip {
-    display: flex;
-    margin: 3px 0px 3px 0px;
-
-    img {
-        width: 70px;
-        height: 70px;
-    }
-}
-
 .detalles {
     //border: 2px solid red;
 

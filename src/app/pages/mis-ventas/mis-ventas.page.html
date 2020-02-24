@@ -1,9 +1,42 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>mis-ventas</ion-title>
+
+    <!-- back button -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <!-- title -->
+    <ion-title>Mis ventas</ion-title>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <!-- ventas list -->
+  <ion-list class="ventas">
+
+    <!-- compra item -->
+    <ion-item class="venta-item" *ngFor="let i of ventas">
+
+      <!-- img -->
+      <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+
+      <!-- datos -->
+      <ion-text>
+        <ion-label class="fecha">Hace 2 meses</ion-label>
+        <ion-label># 00001111</ion-label>
+        <ion-label>Nombre del producto</ion-label>
+      </ion-text>
+      
+      <!-- more -->
+      <ion-icon name="more" slot="end"></ion-icon>
+
+    </ion-item><!-- venta item -->
+
+  </ion-list><!-- ventas list -->
 
 </ion-content>

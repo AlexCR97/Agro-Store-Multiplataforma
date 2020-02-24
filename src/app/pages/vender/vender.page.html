@@ -1,9 +1,173 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>vender</ion-title>
+
+    <!-- menu button -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <!-- title -->
+    <ion-title>Vender</ion-title>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <!-- segment 1 -->
+  <div id="segment-1" class="ion-padding">
+
+    <h4>Información sobre tu producto</h4>
+
+    <!-- titulo de la publicacion -->
+    <ion-item>
+      <ion-label position="floating">Titulo de la publicación</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <!-- nombre del producto -->
+    <ion-item>
+      <ion-label position="floating">Nombre de tu producto</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <!-- otros detalles -->
+    <ion-item>
+      <ion-label position="floating">Otros detalles</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <!-- precio del producto -->
+    <ion-grid class="precio">
+      <ion-row>
+
+        <!-- precio -->
+        <ion-col size="6">
+          <ion-item>
+            <ion-label position="floating">Precio</ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <!-- unidad -->
+        <ion-col size="6">
+          <ion-item>
+            <ion-label position="floating">Unidad</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+  </div><!-- segment 1 -->
+
+  <!-- segment 2 -->
+  <div id="segment-2">
+
+    <div class="ion-padding">
+      <h4>Fotos</h4>
+    </div>
+
+    <!-- cover -->
+    <div class="img-cover center-x">
+      <img src="../../../assets/img/prod-semillas-girasol.jpg" alt="">
+    </div><!-- cover -->
+
+    <div class="separator-full"></div>
+
+    <!-- strip -->
+    <div class="img-strip">
+      <img src="../../../assets/img/prod-semillas-girasol.jpg" alt="" class="as-card">
+      <img src="../../../assets/img/prod-semillas-girasol.jpg" alt="" class="as-card">
+      <img src="../../../assets/img/prod-semillas-girasol.jpg" alt="" class="as-card">
+    </div><!-- strip -->
+
+    <!-- botones -->
+    <div class="as-py-1 center-x">
+      
+      <ion-button>
+        <ion-icon name="image" slot="icon-only"></ion-icon>
+      </ion-button>
+      
+      <ion-button color="danger">
+        <ion-icon name="trash" slot="icon-only"></ion-icon>
+      </ion-button>
+      
+      <ion-button>
+        <ion-icon name="camera" slot="icon-only"></ion-icon>
+      </ion-button>
+
+    </div><!-- botones -->
+
+  </div><!-- segment 2 -->
+
+  <!-- segment 3 -->
+  <div id="segment-3">
+
+    <div class="ion-padding">
+      <h4>Resumen</h4>
+    </div>
+
+    <!-- cover -->
+    <div class="img-cover center-x">
+      <img src="../../../assets/img/prod-semillas-girasol.jpg" alt="">
+    </div><!-- cover -->
+
+    <ion-list class="resumen-list ion-padding">
+
+      <!-- titulo de la publicacion -->
+      <ion-item>
+        <ion-text>
+          <ion-label>Título de la publicación</ion-label>
+          <sub>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestias nulla eveniet hic aut, necessitatibus sequi itaque natus doloremque, sit dolorem sed eligendi aliquam, nisi placeat? Quasi porro officiis aspernatur.</sub>
+        </ion-text>
+      </ion-item>
+
+      <!-- nombre del producto -->
+      <ion-item>
+        <ion-text>
+          <ion-label>Nombre de tu producto</ion-label>
+          <sub>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</sub>
+        </ion-text>
+      </ion-item>
+
+      <!-- otros detalles -->
+      <ion-item>
+        <ion-text>
+          <ion-label>Otros detalles</ion-label>
+          <sub>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestias nulla eveniet hic aut, necessitatibus sequi itaque natus doloremque, sit dolorem sed eligendi aliquam, nisi placeat? Quasi porro officiis aspernatur.</sub>
+        </ion-text>
+      </ion-item>
+
+      <!-- precio -->
+      <ion-item>
+        <ion-text>
+          <ion-label>Precio</ion-label>
+          <sub>$ 142.50 por kilo</sub>
+        </ion-text>
+      </ion-item>
+
+    </ion-list>
+
+  </div><!-- segment 3 -->
+
 </ion-content>
+
+<ion-footer>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button class="ion-text-capitalize" expand="block" (click)="moveSegment(-1)">Anterior</ion-button>
+      </ion-col>
+      <ion-col class="center-both">
+        {{currentSegment}} / {{segmentCount}}
+      </ion-col>
+      <ion-col>
+        <ion-button class="ion-text-capitalize" expand="block" (click)="moveSegment(1)">Siguiente</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-footer>
